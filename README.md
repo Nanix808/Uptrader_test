@@ -53,8 +53,8 @@
 - Метод (Подходит для разворачивания локально):
   - Установить python
   - Клонировать репозиторий
-  - Выполнить команду  RUN python -m pip install --upgrade pip
-  - Выполнить команду RUN python -m pip install -r requirements.txt
+  - Выполнить команду python -m pip install --upgrade pip
+  - Выполнить команду python -m pip install -r requirements.txt
   - Выполнить команду python manage.py runserver
   - Пререйти по адресу 127.0.0.1:8000/menu/
 
