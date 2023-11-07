@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меню</title>
+    <link rel="stylesheet" href="{% static 'menu/style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Тестовое задание UpTrader</h1>
+        <div>
+           <h2>Выберете меню</h2>
+        </div>
+        {% for item in menu %}
+        <a href="{% url 'menu' choises_menu=item.url %}" class="list_menu">
+            {{ item.name }}
+        </a>
+        {% endfor %}
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

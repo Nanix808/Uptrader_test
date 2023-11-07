@@ -1,0 +1,14 @@
+{% for item in menu_items %}
+<ul class="{% if item.active %}active{% endif %} {% if not item.parent %}main{% endif %}">
+  <li>
+    <a href="{% url 'menu_item' choises_menu=choises_menu  menu_item=item.url %}"
+      class="{% if item.active %}active_link{% endif %}">
+      {{ item.name }}
+      {{ item.active }}
+    </a>
+    {% if item.children %}
+    {% include "menu/result.html" with menu_items=item.children choises_menu=choises_menu %}
+    {% endif %}
+  </li>
+</ul>
+{% endfor %}

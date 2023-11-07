@@ -1,0 +1,7 @@
+{% extends "menu/index.html" %}
+{% load menu_extras %}
+
+{% block content %}
+    <h3>Вы выбрали меню: {{choises_menu }}</h3>  
+    <nav>{% draw_menu choises_menu %}</nav>
+{% endblock %}

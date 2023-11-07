@@ -1,0 +1,35 @@
+body {
+    background-color: #f4f5f9;
+}
+
+h1{
+    size: 18px;
+    text-align: center;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #0aa1e2;
+}
+
+.list_menu{
+    margin-right: 10px;
+    border: 1px solid #0aa1e2;
+}
+
+.main {
+    display: block;
+}
+
+.active_link~ul {
+    display: block;
+}
