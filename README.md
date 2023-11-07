@@ -14,7 +14,7 @@
 <a name="описание"></a> 
 ## ***Описание***
 
-![](https://github.com/Nanix808/Uptrader_test/static_repo/demo.gif)
+![](https://github.com/Nanix808/Uptrader_test/blob/main/static_repo/demo.gif)
 
 
 Тестовое задание для компании UpTrader
